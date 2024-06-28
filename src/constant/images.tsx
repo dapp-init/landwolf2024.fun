@@ -56,7 +56,6 @@ import tokenary from "../assets/tokenary.png";
 import spatium from "../assets/spatium.jpeg";
 
 import bgDesk from "../assets/homeimage/bg-desk.jpg";
-import titleImg from "../assets/homeimage/title-img_002.webp";
 import glassImg from "../assets/homeimage/logo-003.jpg";
 import telegram from "../assets/homeimage/2.png";
 import github from "../assets/homeimage/6.png";
@@ -119,7 +118,6 @@ export default {
     tokenary,
     spatium,
     bgDesk,
-    titleImg,
     glassImg,
     telegram,
     github,
