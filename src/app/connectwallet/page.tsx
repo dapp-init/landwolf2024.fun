@@ -75,12 +75,12 @@ function ConnectWallet() {
           <p className="mt-2 text-xl p-2">
             Multiple iOS and Android wallets support this protocol. Your private
             keys are encrypted locally on your device with Secure Enclave,
-            protected by Biometric and 2-Factor Authentication. .
+            protected by Biometric and 2-Factor Authentication. 
           </p>
         </div>
       </div>
       {/* Wallet Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mt-8 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-5 sm:grid-cols-3 gap-8 mt-8 p-8">
         {data.wallets.map((wallet, index) => (
           <Card key={index} title={wallet.title} imageUrl={wallet.imgUrl} />
         ))}

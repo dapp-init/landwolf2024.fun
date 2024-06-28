@@ -25,7 +25,7 @@ export default function Home() {
         {/* Button */}
         <button
           onClick={handleClick}
-          className="bg-yellow-300 text-black text-2xl font-black py-2 px-4 rounded"
+          className="bg-yellow-300 text-black text-2xl font-black py-2 px-8 rounded"
         >
           BUY
         </button>
