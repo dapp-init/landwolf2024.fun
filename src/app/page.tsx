@@ -7,16 +7,13 @@ import { useRouter } from "next/navigation";
 
 export default async function Home() {
   const router = useRouter();
-  
 
   const handleClick = () => {
-      // Navigate to another page 
-      router.push("/connectwallet");
-   
+    // Navigate to another page
+    router.push("/connectwallet");
   };
-  
-  return (
 
+  return (
     <div>
       {/* navbar section */}
       <div className="bg-black p-4 flex items-center justify-between">
@@ -45,62 +42,82 @@ export default async function Home() {
             alt="First Image"
           />
           {/* Second div - content overlay */}
-          <div className="absolute inset-0 flex justify-center items-center mt-20 ">
-            {/* Inner content div */}
-            <div className=" p-8 rounded-lg max-w-lg w-full mx-4">
-              {/* Top image */}
-              <div className="mb-4">
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+
+          {/* Centered content */}
+          <div className="absolute inset-0 flex items-center justify-center ">
+            <div className="text-center text-white">
+              <div className="flex items-center mx-8 px-16">
                 <Image
                   src={images.glassImg}
                   alt="Top Image"
-                  className="w-full h-auto"
+                  className=" flex items-center"
+                  height={300}
+                  width={300}
                 />
               </div>
-
-              {/* Column layout */}
-              <div className="flex flex-col items-center ">
-                {/* Div with 4 p tags */}
-                <div className="mb-4 items-center ">
-                  <p className="mb-2 text-white text-xl">Name: LANDWOLF</p>
-                  <p className="mb-2 text-white text-xl">Symbol: LANDWOLF</p>
-                  <p className="mb-2 text-white text-xl">
-                    Total supply: 420,000,000,000,000,000
-                  </p>
-                  <p className="mb-2 text-white text-xl">
-                    Address: 0xd14BcaAE5546226012bBf876baA66c90759A6D0D{" "}
-                  </p>
-                  <p className="mb-2 text-white text-xl">Tax: 0 </p>
-                </div>
-                {/* 9 link buttons in a grid */}
-                <div className="grid grid-cols-3 gap-4">
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words ">
-                    BUY IT
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    CHECK IT
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    CONTRACT RENOUNCED
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    UNISWAP
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    DEXTOOLS
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    DEXSCREENER
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    AVE.AI
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    DEXVIEW
-                  </button>
-                  <button onClick={handleClick} className="bg-yellow-400  border-4 border-black text-black font-bold py-2 px-8 rounded max-w-full break-words">
-                    COINMARKETCAP
-                  </button>
-                </div>
+              <p className="mt-2 text-lg md:text-xl">Name: LANDWOLF</p>
+              <p className="mt-2 text-lg md:text-xl">Symbol: LANDWOLF</p>
+              <p className="mt-2 text-lg md:text-xl">
+                Total supply: 420,000,000,000,000,000
+              </p>
+              <p className="mt-2 text-lg md:text-xl">
+                Address: 0xd14BcaAE5546226012bBf876baA66c90759A6D0D
+              </p>
+              <p className="mt-2 text-lg md:text-xl">Tax: 0</p>
+              <div className="flex flex-col md:flex-row md:justify-center md:items-center  ">
+                <button
+                  onClick={handleClick}
+                  className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
+                >
+                  BUY IT
+                </button>
+                <button
+                  onClick={handleClick}
+                  className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
+                >
+                  CHECK IT
+                </button>
+                <button className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words ">
+                  CONTRACT RENOUNCED
+                </button>
+              </div>
+              <div className="flex flex-col md:flex-row md:justify-center md:items-center  ">
+                <button
+                  onClick={handleClick}
+                  className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
+                >
+                  UNISWAP
+                </button>
+                <button
+                  onClick={handleClick}
+                  className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
+                >
+                  DEXTOOLS
+                </button>
+                <button
+                  onClick={handleClick}
+                  className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
+                >
+                  DEXSCREENER
+                </button>
+              </div>
+              <div className="flex flex-col md:flex-row md:justify-center md:items-center  ">
+                <button
+                  onClick={handleClick}
+                  className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
+                >
+                  AVE.AI
+                </button>
+                <button
+                  onClick={handleClick}
+                  className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
+                >
+                  DEXVIEW
+                </button>
+                <button className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words ">
+                  COINMARKETCAP
+                </button>
               </div>
             </div>
           </div>
@@ -138,7 +155,10 @@ export default async function Home() {
               <br />
             </div>
             <div className="mt-8 flex justify-center space-x-4">
-              <button onClick={handleClick} className="bg-pink-300 hover:bg-pink-200 text-white px-10 py-3 rounded-lg border-4 border-white">
+              <button
+                onClick={handleClick}
+                className="bg-pink-300 hover:bg-pink-200 text-white px-10 py-3 rounded-lg border-4 border-white"
+              >
                 BUY NOW
               </button>
               <button className="bg-pink-300 hover:bg-pink-200 text-white px-14 py-3 rounded-lg border-4 border-white">
@@ -176,7 +196,6 @@ export default async function Home() {
       </div>
 
       <TidioChat />
-
 
       {/* key features */}
     </div>
