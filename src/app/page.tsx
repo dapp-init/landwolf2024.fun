@@ -47,7 +47,7 @@ export default async function Home() {
           {/* Centered content */}
           <div className="absolute inset-0 flex items-center justify-center ">
             <div className="text-center text-white">
-              <div className="flex items-center mx-8 px-16">
+              <div className="flex items-center mx-12 ml-8 mt-10  px-16">
                 <Image
                   src={images.glassImg}
                   alt="Top Image"
