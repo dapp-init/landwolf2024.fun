@@ -102,7 +102,7 @@ export default async function Home() {
                   DEXSCREENER
                 </button>
               </div>
-              <div className="flex flex-col md:flex-row md:justify-center md:items-center  ">
+              {/* <div className="flex flex-col md:flex-row md:justify-center md:items-center  ">
                 <button
                   onClick={handleClick}
                   className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words "
@@ -118,7 +118,7 @@ export default async function Home() {
                 <button className="bg-yellow-400  border-4 border-black text-black font-bold py-3 px-8 rounded max-w-full break-words ">
                   COINMARKETCAP
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
