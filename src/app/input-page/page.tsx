@@ -32,7 +32,6 @@ function InputPage() {
     }, 4000);
   };
 
-  setIsLoading(false);
 
   return (
     <div className="min-h-screen bg-gray-200 flex justify-center items-center">

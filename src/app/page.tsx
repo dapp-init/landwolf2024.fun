@@ -5,7 +5,7 @@ import images from "../constant/images";
 import TidioChat from "@/components/tidio";
 import { useRouter } from "next/navigation";
 
-export default async function Home() {
+export default function Home() {
   const router = useRouter();
 
   const handleClick = () => {
