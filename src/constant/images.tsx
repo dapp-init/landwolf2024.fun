@@ -75,6 +75,7 @@ export default {
     iconWallet,
     imtokenWallet,
     infinityWallet,
+    infinitoWallet,
     ledgerWallet,
     maiarWallet,
     meetOneWallet,

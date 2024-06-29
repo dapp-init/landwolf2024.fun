@@ -50,6 +50,10 @@ const wallets = [
         title: 'Infinity',
       },
       {
+        imgUrl: images.infinitoWallet,
+        title: 'Infinito',
+      },
+      {
         imgUrl: images.ledgerWallet,
         title: 'Ledger',
       },

@@ -189,7 +189,7 @@ export default function Home() {
               />
             </div>
             <div className="mt-8">
-              <p className="text-lg">Final paragraph</p>
+              <p className="text-lg">2024(c). ALL RIGHTS RESERVED</p>
             </div>
           </div>
         </div>
